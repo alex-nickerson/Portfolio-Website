@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-color: black;
+            opacity: 0;
+            transition: opacity 1.5s;
+            overflow-x: hidden;
+        }
+    </style>  
+</head>
+<body onload="document.body.style.opacity='1'">
+    <!-- Nav bar -->
+    <nav>
+        <div class="nav">
+            <a href="#section-1">Home</a>
+            <a href="#section-2">Portfolio</a>
+            <a href="#section-3">Contact</a>
+        </div>
+    </nav>
+    <!-- Hero -->
+    <section id="section-1">
+        <div class="hero-container">
+            <!-- Video -->
+            <div class="background">
+                <video autoplay muted loop id="myVideo">
+                    <source src="faded_memories.mp4" type="video/mp4">
+                </video>
+            </div>
+            <!-- Headers -->
+            <div class="main-text">
+                <h1>Alex Nickerson</h1>
+            </div>
+            <!-- Profile Picture -->
+            <div class="profile">
+                <img src="Images/picture.jpg " alt="Profile Picture" class="pfp">
+            </div>
+            <!-- Buttons -->
+            <div class="buttons-container">
+                <div class="button1"><a id = "scroll" href="#section-2"><button type="button1"><span></span>Portfolio</button></a></div>
+                <div class="button2"><a href="Images/resume.png" target="_blank"><button type="button2"><span></span>Resume</button></a></div>
+                <div class="button3"><a id = "scroll" href="#section-3"><button type="button3"><span></span>Contact</button></a></div>
+            </div>
+            <!-- About Me -->
+            <p class="about-me"> 
+                Hello! My name is Alex and I'm currently studying <br> Computer Science at the University of Windsor. Heading into my second year, <br>
+                I'm a passionate back-end developer ready to take on any challenges!
+            </p>
+            <!-- Tech Stack Icons -->
+            <div class="tech-stack">
+                <img src="Images/python-logo.png" alt="Python Logo" class="py-logo">
+                <img src="Images/html-logo.png" alt="HTML Logo" class="html-logo">
+                <img src="Images/css-logo.png" alt="CSS Logo" class="css-logo">
+                <img src="Images/C-logo.png" alt="C Logo" class="c-logo">
+            </div>
+            </div>
+        </div>
+    <!-- Portfolio Page -->
+    </section>
+    <section id="section-2">
+        <div class="portfolio-page">
+            <h2>Portfolio</h2>
+        </div>
+        <!-- Project 1: Website -->
+        <p class="project1"><i>Personal Website</i></p>
+        <div class="web-pic">
+            <img src="Images/website-landing-lage.png" alt="Website" class="webpage-img">
+        </div>
+        <p class="p1-description">
+            In this project I utilized my skills of HTML and CSS <br> to build a beautiful personal website to show off my projects.
+        </p>
+        <img src="Images/html-logo.png" alt="HTML Logo" class="html-logo2">
+        <img src="Images/css-logo.png" alt="CSS Logo" class="css-logo2">
+        <div class="p1-button"><a href="https://github.com/AlexSnickerbar/Portfolio-Website" target="_blank"><button type="p1-button"><span></span>Code</button></a></div>
+        <!-- Project 2: WIP -->
+        <p class="project2"><i>Project #2</i></p>
+        <div class="project2-pic">
+            <img src="Images/placeholder.png" alt="Placeholder" class="placeholder">
+        </div>
+        <p class="p2-description"><i>Work in progress...</i></p>
+    </section>
+    <!-- Contact Page -->
+    <section id="section-3" class="section-3">
+        <p class="contact-me">Contact Me! <br> Email: nickersonaj@gmail.com </p>
+    </section>
+</body>
+</html>

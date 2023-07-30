@@ -1,0 +1,279 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+@keyframes slideInLeft {
+    from{
+        transform: translateX(-1000px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+section{
+    height: 100vh;
+    position: relative;
+}
+
+.logo{
+    color: #fff;
+    width: 80px;
+    cursor: default;
+    visibility: hidden;
+}
+
+.nav{
+    position: fixed;
+    color: #f1f1f1;
+    padding: 0rem calc((100vw - 1300px)/2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    z-index: 1;
+    border-bottom: 2px solid white;
+    border-radius: 25px;
+    translate: 160px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+nav a:hover{
+    font-size: 24px;
+}
+
+.hero-container{
+    text-align: center;
+}
+
+.background{
+    size: cover;
+    position: fixed;
+    transform: translate(0,-80px);
+}
+
+.main-text{
+    color: #fff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 240px;
+    left: 445px;
+    font-size: 32px;
+    cursor: default;
+}
+
+.profile{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    transform: translate(200px,300px);
+}
+
+.pfp{
+    max-width: 100%;
+    max-height: 100%;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.about-me{
+    font-size: 18px;
+    position: absolute;
+    color: #fff;
+    top: 425px;
+    left: 610px;
+    padding: 10px;
+    cursor: default;
+    background: rgba(100, 100, 100, 0.5);
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.tech-stack{
+    z-index: 1;
+    display: flex;
+    position: absolute;
+    transform: translate(338px,815px);
+    padding: 10px;
+}
+
+.py-logo{
+    width: 50px;
+    height: 50px;
+}
+
+.html-logo{
+    width: 50px;
+    height: 50px;
+}
+
+.css-logo{
+    width: 50px;
+    height: 50px;
+}
+
+.c-logo{
+    width: 50px;
+    height: 50px;
+    padding: 0 10px;
+}
+
+button{
+    width: 175px;
+    padding: 10px 0;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid white;
+    background: transparent;
+    color: #fff;
+    position: absolute;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+button a{
+    color: #fff;
+    text-decoration: none
+}
+
+.button1{
+    translate: -300px 530px;
+    animation: slideInLeft 1s ease-out;
+}
+
+.button2{
+    translate: -97px 530px;
+    animation: slideInLeft 1s ease-out;
+    animation-delay: 0.05s;
+}
+
+.button3{
+    translate: 100px 530px;
+    animation: slideInLeft 1s ease-out;
+    animation-delay: 0.09s;
+}
+
+span{
+    background: rgba(100, 100, 100, 0.5);
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+h2{
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    padding: 5rem;
+    justify-content: center;
+}
+
+.project1{
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    padding: 5rem;
+    transform: translate(200px,-35px);
+}
+
+.web-pic{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    transform: translate(150px,-100px);
+}
+
+.webpage-img{
+    max-width: 100%;
+    max-height: 100%;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.p1-description{
+    color: #ffffff;
+    font-size: 18px;
+    display: flex;
+    padding: 5rem;
+    transform: translate(600px,-125px);
+}
+
+.p1-button{
+    transform: translate(825px,-255px);
+}
+
+.html-logo2{
+    width: 60px;
+    height: 60px;
+    transform: translate(820px,-140px);
+}
+
+.css-logo2{
+    width: 45px;
+    height: 45px;
+    transform: translate(890px,-146px);
+}
+
+.project2{
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    padding: 5rem;
+    transform: translate(800px,-180px);
+}
+
+.project2-pic{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    transform: translate(150px,-100px);
+}
+
+.placeholder{
+    max-width: 100%;
+    max-height: 100%;
+    border: 2px solid white;
+    border-radius: 25px;
+    transform: translate(550px,-150px);
+}
+
+.p2-description{
+    color: #ffffff;
+    font-size: 18px;
+    display: flex;
+    padding: 5rem;
+    transform: translate(250px,-200px);
+}
+
+.section-3{
+    height: 20vh;
+    position: relative;
+}
+
+.contact-me{
+    color: #ffffff;
+    font-size: 32px;
+    display: flex;
+    padding: 5rem;
+    justify-content: center;
+}
