@@ -19,25 +19,17 @@ section{
     position: relative;
 }
 
-.logo{
-    color: #fff;
-    width: 80px;
-    cursor: default;
-    visibility: hidden;
-}
-
 .nav{
     position: fixed;
     color: #f1f1f1;
-    padding: 0rem calc((100vw - 1300px)/2);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 50%;
+    width: 40%;
     z-index: 1;
     border-bottom: 2px solid white;
     border-radius: 25px;
-    translate: 160px;
+    transform: translateX(30vw);
 }
 
 nav a{
@@ -50,10 +42,6 @@ nav a{
 
 nav a:hover{
     font-size: 24px;
-}
-
-.hero-container{
-    text-align: center;
 }
 
 .background{
@@ -70,6 +58,7 @@ nav a:hover{
     left: 445px;
     font-size: 32px;
     cursor: default;
+    text-align: center;
 }
 
 .profile{
@@ -77,6 +66,7 @@ nav a:hover{
     height: 500px;
     position: absolute;
     transform: translate(200px,300px);
+    text-align: center;
 }
 
 .pfp{
@@ -88,7 +78,7 @@ nav a:hover{
 
 .about-me{
     font-size: 18px;
-    position: absolute;
+    position: relative;
     color: #fff;
     top: 425px;
     left: 610px;
@@ -97,13 +87,16 @@ nav a:hover{
     background: rgba(100, 100, 100, 0.5);
     border: 2px solid white;
     border-radius: 25px;
+    text-align: center;
+    display: flex;
+    width: 40rem;
 }
 
 .tech-stack{
     z-index: 1;
     display: flex;
     position: absolute;
-    transform: translate(338px,815px);
+    transform: translate(338px,740px);
     padding: 10px;
 }
 
@@ -148,18 +141,18 @@ button a{
 }
 
 .button1{
-    translate: -300px 530px;
+    translate: 650px 530px;
     animation: slideInLeft 1s ease-out;
 }
 
 .button2{
-    translate: -97px 530px;
+    translate: 850px 530px;
     animation: slideInLeft 1s ease-out;
     animation-delay: 0.05s;
 }
 
 .button3{
-    translate: 100px 530px;
+    translate: 1050px 530px;
     animation: slideInLeft 1s ease-out;
     animation-delay: 0.09s;
 }
@@ -183,9 +176,9 @@ button:hover span{
 h2{
     color: #fff;
     font-size: 30px;
-    display: flex;
     padding: 5rem;
     justify-content: center;
+    display: flex;
 }
 
 .project1{
@@ -263,6 +256,7 @@ h2{
     display: flex;
     padding: 5rem;
     transform: translate(250px,-200px);
+    width: min-content;
 }
 
 .section-3{
