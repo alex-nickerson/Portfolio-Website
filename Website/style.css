@@ -37,7 +37,7 @@ section{
     z-index: 1;
     border-bottom: 2px solid white;
     border-radius: 25px;
-    translate: 160px;
+    translate: 50%;
 }
 
 nav a{
