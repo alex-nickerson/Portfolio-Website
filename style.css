@@ -1,0 +1,289 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+@keyframes slideInLeft {
+    from{
+        transform: translateX(-1000px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+section{
+    height: 62rem;
+    position: relative;
+    width: auto;
+}
+
+.nav{
+    margin: 0 auto;
+    position: fixed;
+    color: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    z-index: 1;
+    border-bottom: 2px solid white;
+    border-radius: 25px;
+    transform: translateX(30vw);
+    background: rgba(100, 100, 100, 0.5);
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+nav a:hover{
+    font-size: x-large;
+}
+
+.background{
+    size: cover;
+    position: fixed;
+}
+
+.main-text{
+    color: #fff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 240px;
+    left: 445px;
+    font-size: 40px;
+    cursor: default;
+    text-align: center;
+}
+
+.profile{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    transform: translate(12.5rem,18.75rem);
+    text-align: center;
+}
+
+.pfp{
+    max-width: 100%;
+    max-height: 100%;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.about-me{
+    font-size: 18px;
+    position: relative;
+    color: #fff;
+    top: 425px;
+    left: 610px;
+    padding: 10px;
+    cursor: default;
+    background: rgba(100, 100, 100, 0.5);
+    border: 2px solid white;
+    border-radius: 25px;
+    text-align: center;
+    display: flex;
+    width: 40rem;
+}
+
+.tech-stack{
+    z-index: 1;
+    display: flex;
+    position: absolute;
+    transform: translate(21.125rem,46.25rem);
+    padding: 10px;
+}
+
+.py-logo{
+    width: 50px;
+    height: 50px;
+}
+
+.html-logo{
+    width: 50px;
+    height: 50px;
+}
+
+.css-logo{
+    width: 50px;
+    height: 50px;
+}
+
+.c-logo{
+    width: 50px;
+    height: 50px;
+    padding: 0 10px;
+}
+
+.github-logo{
+    background: rgba(100, 100, 100, 0.5);
+    border: 2px solid white;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    transform: translate(57rem,32rem);
+}
+
+button{
+    width: 175px;
+    padding: 10px 0;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid white;
+    background: transparent;
+    color: #fff;
+    position: absolute;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+button a{
+    color: #fff;
+    text-decoration: none
+}
+
+.button1{
+    translate: 40.625rem 33.125rem;
+    animation: slideInLeft 1s ease-out;
+}
+
+.button2{
+    translate: 53.125rem 33.125rem;
+    animation: slideInLeft 1s ease-out;
+    animation-delay: 0.05s;
+}
+
+.button3{
+    translate: 65.625rem 33.125rem;
+    animation: slideInLeft 1s ease-out;
+    animation-delay: 0.09s;
+}
+
+span{
+    background: rgba(100, 100, 100, 0.5);
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+h2{
+    color: #fff;
+    font-size: 30px;
+    padding: 5rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.project1{
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    padding: 5rem;
+    transform: translate(12.5rem,-2.1875rem);
+}
+
+.web-pic{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    transform: translate(9.375rem,-6.25rem);
+}
+
+.webpage-img{
+    max-width: 100%;
+    max-height: 100%;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.p1-description{
+    color: #ffffff;
+    font-size: 18px;
+    display: flex;
+    padding: 5rem;
+    transform: translate(37.5rem,-7.8125rem);
+}
+
+.p1-button{
+    transform: translate(51.5625rem,-15.9375rem);
+}
+
+.html-logo2{
+    width: 60px;
+    height: 60px;
+    transform: translate(51.25rem,-8.75rem);
+}
+
+.css-logo2{
+    width: 45px;
+    height: 45px;
+    transform: translate(55.625rem,-9.125rem);
+}
+
+.project2{
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    padding: 5rem;
+    transform: translate(27rem,-11.25rem);
+    justify-content: end;
+}
+
+.project2-pic{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    transform: translate(9.375rem,-6.25rem);
+}
+
+.placeholder{
+    max-width: 100%;
+    max-height: 100%;
+    border: 2px solid white;
+    border-radius: 25px;
+    transform: translate(34.375rem,-9.365rem);
+}
+
+.p2-description{
+    color: #ffffff;
+    font-size: 18px;
+    display: flex;
+    padding: 5rem;
+    transform: translate(15.625rem,-12.5rem);
+    width: min-content;
+}
+
+.section-3{
+    height: 20vh;
+    position: relative;
+}
+
+.contact-me{
+    color: #ffffff;
+    font-size: 32px;
+    padding: 5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
