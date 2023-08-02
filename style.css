@@ -245,8 +245,7 @@ h2{
     font-size: 30px;
     display: flex;
     padding: 5rem;
-    transform: translate(27rem,-11.25rem);
-    justify-content: end;
+    transform: translate(50rem,-11.5rem);
 }
 
 .project2-pic{
