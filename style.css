@@ -17,7 +17,7 @@
 section{
     height: 62rem;
     position: relative;
-    width: auto;
+    width: fit-content;
 }
 
 .nav{
@@ -57,7 +57,7 @@ nav a:hover{
     position: absolute;
     transform: translate(-50%, -50%);
     top: 240px;
-    left: 445px;
+    left: 450px;
     font-size: 40px;
     cursor: default;
     text-align: center;
@@ -98,8 +98,10 @@ nav a:hover{
     z-index: 1;
     display: flex;
     position: absolute;
-    transform: translate(21.125rem,46.25rem);
+    transform: translate(19.5rem,46.25rem);
     padding: 10px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .py-logo{
@@ -121,6 +123,11 @@ nav a:hover{
     width: 50px;
     height: 50px;
     padding: 0 10px;
+}
+
+.java-logo{
+    width: 50px;
+    height: 50px;
 }
 
 .github-logo{
@@ -184,22 +191,21 @@ button:hover span{
     width: 100%;
 }
 
-h2{
+.portfolio{
     color: #fff;
     font-size: 30px;
-    padding: 5rem;
-    align-items: center;
     text-align: center;
-    justify-content: center;
-    display: flex;
+    display: inline-flex;
+    transform: translate(50.25rem, -6rem);
+    padding: 5rem;
 }
 
 .project1{
     color: #fff;
     font-size: 30px;
-    display: flex;
+    display: inline-block;
     padding: 5rem;
-    transform: translate(12.5rem,-2.1875rem);
+    transform: translate(-5rem,-2.1875rem);
 }
 
 .web-pic{
@@ -222,6 +228,7 @@ h2{
     display: flex;
     padding: 5rem;
     transform: translate(37.5rem,-7.8125rem);
+    width: fit-content;
 }
 
 .p1-button{
@@ -243,7 +250,7 @@ h2{
 .project2{
     color: #fff;
     font-size: 30px;
-    display: flex;
+    display: inline-block;
     padding: 5rem;
     transform: translate(50rem,-11.5rem);
 }
@@ -272,9 +279,15 @@ h2{
     width: min-content;
 }
 
+.section-2{
+    padding-top: 5rem;
+}
+
 .section-3{
     height: 20vh;
     position: relative;
+    width: auto;
+    top: -7.5rem;
 }
 
 .contact-me{
